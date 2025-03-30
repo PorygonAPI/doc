@@ -33,7 +33,12 @@ Ao assumir uma task, o membro deve revisar o card e os detalhamentos fornecidos,
 
 > **2ª Ocorrência: Aplicação de um strike**
 
-> **2 strikes: Comunicação para retirada do integrante** 
+### PENALIDADES:
+>1° Strike: Alerta oficial e conversa para o ajuste de postura.
+
+>2° Strike: Reunião entre o PO e o SM com uma conversa para aviso da redução na nota da participação.
+
+>3° Strike: Será feita uma reunião com os membros do grupo para discussão da exclusão do membro e redistribuição das tarefas.
 
 ## DAILY
 Para garantir que todos estejam informados e que o fluxo de trabalho seja contínuo, as dailies serão realizadas de forma assíncrona a cada 2 dias. Cada integrante deverá atualizar o grupo do WhatsApp nas terças, quintas e sábado/domingo informando sobre o progresso das tasks, se já foi aberta uma Pull Request (PR), e se precisa de ajuda em algum ponto específico.
@@ -100,15 +105,9 @@ rastreabilidade das alterações.
 
 Estrutura da branch: 
 
-`<tipo>-<descricao>`
+`<id_demanda1>, <id_demanda2>, ..., <id_demandaN>-<descricao>`
 
-### TIPOS:
-
-* feature/  : Para novas funcionalidades. 
-* bugfix/  : Para correção de bugs. 
-* hotfix/  : Para correções urgentes em produção. 
-* refactor/  : Para refatoramentos. 
-* release/  : Para preparação de versões.
+Em branch não usamos caracteres especiais e nem pontuações.
   
 ### EXEMPLOS:
 
