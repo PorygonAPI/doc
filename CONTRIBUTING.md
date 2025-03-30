@@ -53,8 +53,6 @@ Ex3: Doc, Task #0 – Resumo do progresso.
 
 ---
 
-# PADRÕES
-
 ## COMMIT
 
 Os commits devem ser descritivos e seguir um padrão definido para manter a rastreabilidade e a clareza no histórico do repositório.
