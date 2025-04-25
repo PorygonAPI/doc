@@ -7,6 +7,7 @@
   <a href ="#strike"> STRIKE </a>  •
   <a href ="#daily"> DAILY </a>  •
   <a href="#padrões"> PADRÕES </a> •
+  <a href="#nomenclatura"> NOMENCLATURA </a> •
   <a href="#commit"> COMMIT </a> •
   <a href ="#pull-request"> PULL REQUEST </a>  •
   <a href ="#branch"> BRANCH </a>
@@ -52,6 +53,40 @@ Ex2: Client, Task #0 – Resumo do progresso.
 Ex3: Doc, Task #0 – Resumo do progresso.
 
 ---
+
+# PADRÕES
+
+## NOMENCLATURA
+
+Como forma de padronização das variáveis, atributos, colunas e tabelas, adotaremos a seguinte forma:
+
+- `snake_case` para Banco de Dados (.sql / Tabelas / Colunas)
+- `camelCase` para demais arquivos Java (DTO, Entity, Service, Controller e Repository)
+
+Exemplo:
+
+Arquivo DDL schema.sql
+```mysql
+CREATE TABLE tipo_solo
+```
+
+Arquivo Entity TipoSolo.java
+```java
+public class TipoSolo
+```
+
+E como forma de padronizar os nomes utilizados pelo cliente, os nomes utilizados nos códigos e os arquivos disponibilizados, verifique abaixo as definições:
+
+**Área Agrícola**: Engloba o contorno todo da _fazenda_, seus atributos e seus talhões.
+
+**GeoJson Saída**: Nome do arquivo GeoJson que fornece os dados espaciais de uma fazenda, tendo as informações específicas dos talhões separadas.
+
+**Talhões**: Também chamado de vetor, são as divisões de terra, identificadas nos arquivos GeoJson pelo MN_TL.
+
+**Mapa de Classificação Automática**: Arquivo GeoJson que fornece dos dados de ervas daninhas coletados pelos satélites e alimentados pela IA. O arquivo abrange a fazenda inteira, com a separação dos talhões pelo MN_TL.
+
+**Mapa de Classificação Manual**: Arquivo GeoJson gerado a partir da edição de um Analista, que retira ou adiciona áreas de erva daninha nos talhões atribuídos.
+
 
 ## COMMIT
 
